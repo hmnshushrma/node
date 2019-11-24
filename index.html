@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Express - Node.js POST data example</title>
+</head>
+
+<body>
+  <form action="/api/data" method="POST">
+    <input type="text" placeholder="username" name="user_name" >
+    <input type="text" placeholder="first name" name="first_name" >
+    <input type="text" placeholder="last name" name="last_name" >
+    <input type="password" placeholder="password" name="password" >
+    <input type="email" placeholder="Email Id" name="email_id" >
+    <button type="submit">Send</button>
+  </form>
+
+
+  <script>
+  if(window.location.pathname === '/my-account/'){
+    document.getElementsByTagName('button')[1].addEventListener('click', () => {
+      setTimeout(()=>{
+        console.log('hello');
+      },0)
+    })
+  }
+  </script>
+
+
+</body>
+
+</html>
